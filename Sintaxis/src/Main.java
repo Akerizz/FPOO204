@@ -110,27 +110,37 @@ public class Main {
 
 // Ejercicio 2
 
+//     Scanner scanner = new Scanner(System.in);
+//
+//     System.out.print("Ingrese su nombre completo: ");
+//     String nombre = scanner.nextLine();
+//
+//     System.out.println("en minúsculas: " + nombre.toLowerCase());
+//     System.out.println("en mayúsculas: " + nombre.toUpperCase());
+//     System.out.println("con iniciales en mayúscula: " + Nombre(nombre));
+//
+//     scanner.close();
+//    }
+//
+// public static String Nombre(String nombre) {
+//  String[] palabras = nombre.split(" ");
+//  StringBuilder resultado = new StringBuilder();
+//  for (String palabra : palabras) {
+//   resultado.append(Character.toUpperCase(palabra.charAt(0)))
+//           .append(palabra.substring(1).toLowerCase()).append(" ");
+//  }
+//  return resultado.toString().trim();
+
+//Ejercicio 3
+
      Scanner scanner = new Scanner(System.in);
 
-     System.out.print("Ingrese su nombre completo: ");
-     String nombre = scanner.nextLine();
+     System.out.print("Ingrese un número entero X: ");
+     int x = scanner.nextInt();
 
-     System.out.println("en minúsculas: " + nombre.toLowerCase());
-     System.out.println("en mayúsculas: " + nombre.toUpperCase());
-     System.out.println("con iniciales en mayúscula: " + Nombre(nombre));
+     int suma = (x * (x + 1)) / 2;
+     System.out.println("La suma de los números del 1 al " + x + " es: " + suma);
 
      scanner.close();
-    }
-
- public static String Nombre(String nombre) {
-  String[] palabras = nombre.split(" ");
-  StringBuilder resultado = new StringBuilder();
-  for (String palabra : palabras) {
-   resultado.append(Character.toUpperCase(palabra.charAt(0)))
-           .append(palabra.substring(1).toLowerCase()).append(" ");
-  }
-  return resultado.toString().trim();
-
-
     }
 }
