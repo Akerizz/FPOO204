@@ -148,21 +148,28 @@ public class Main {
 
 
 
+//     Scanner scanner = new Scanner(System.in);
+//
+//     System.out.print("Ingrese su nombre: ");
+//     String nombre = scanner.nextLine();
+//
+//     String nombreSinEspacios = nombre.replace(" ", "");
+//     System.out.println(nombre.toUpperCase() + " tiene " + nombreSinEspacios.length() + " letras.");
+//
+//     scanner.close();
+
+
      //Ejercicio 5
 
 
 
      Scanner scanner = new Scanner(System.in);
 
-     System.out.print("Ingrese su nombre: ");
-     String nombre = scanner.nextLine();
      System.out.print("Ingrese el número de payasos vendidos: ");
      int payasos = scanner.nextInt();
      System.out.print("Ingrese el número de muñecas vendidas: ");
      int munecas = scanner.nextInt();
 
-     String nombreSinEspacios = nombre.replace(" ", "");
-     System.out.println(nombre.toUpperCase() + " tiene " + nombreSinEspacios.length() + " letras.");
      int pesoTotal = (payasos * 112) + (munecas * 75);
      System.out.println("El peso total del paquete es: " + pesoTotal + " gramos.");
 
