@@ -133,13 +133,28 @@ public class Main {
 
 //Ejercicio 3
 
+//     Scanner scanner = new Scanner(System.in);
+//
+//     System.out.print("Ingrese un número entero X: ");
+//     int x = scanner.nextInt();
+//
+//     int suma = (x * (x + 1)) / 2;
+//     System.out.println("La suma de los números del 1 al " + x + " es: " + suma);
+//
+//     scanner.close();
+
+
+     //Ejercicio 4
+
+
+
      Scanner scanner = new Scanner(System.in);
 
-     System.out.print("Ingrese un número entero X: ");
-     int x = scanner.nextInt();
+     System.out.print("Ingrese su nombre: ");
+     String nombre = scanner.nextLine();
 
-     int suma = (x * (x + 1)) / 2;
-     System.out.println("La suma de los números del 1 al " + x + " es: " + suma);
+     String nombreSinEspacios = nombre.replace(" ", "");
+     System.out.println(nombre.toUpperCase() + " tiene " + nombreSinEspacios.length() + " letras.");
 
      scanner.close();
     }
