@@ -95,20 +95,41 @@ public class Main {
 
 // Ejercicio 1
 
-       Scanner scanner = new Scanner(System.in);
+//       Scanner scanner = new Scanner(System.in);
+//
+//       System.out.print("Ingrese el numero de horas que se trabajaron: ");
+//       int horas = scanner.nextInt();
+//       System.out.print("Ingrese el costo por hora: ");
+//       double costo = scanner.nextDouble();
+//
+//       double paga = horas * costo;
+//       System.out.println("La paga total es: $" + paga);
+//
+//       scanner.close();
 
-       System.out.print("Ingrese el numero de horas que se trabajaron: ");
-       int horas = scanner.nextInt();
-       System.out.print("Ingrese el costo por hora: ");
-       double costo = scanner.nextDouble();
 
-       double paga = horas * costo;
-       System.out.println("La paga total es: $" + paga);
+// Ejercicio 2
 
-       scanner.close();
+     Scanner scanner = new Scanner(System.in);
 
+     System.out.print("Ingrese su nombre completo: ");
+     String nombre = scanner.nextLine();
 
+     System.out.println("en minúsculas: " + nombre.toLowerCase());
+     System.out.println("en mayúsculas: " + nombre.toUpperCase());
+     System.out.println("con iniciales en mayúscula: " + Nombre(nombre));
 
+     scanner.close();
+    }
+
+ public static String Nombre(String nombre) {
+  String[] palabras = nombre.split(" ");
+  StringBuilder resultado = new StringBuilder();
+  for (String palabra : palabras) {
+   resultado.append(Character.toUpperCase(palabra.charAt(0)))
+           .append(palabra.substring(1).toLowerCase()).append(" ");
+  }
+  return resultado.toString().trim();
 
 
     }
