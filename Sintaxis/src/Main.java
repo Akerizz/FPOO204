@@ -163,16 +163,30 @@ public class Main {
 
 
 
-     Scanner scanner = new Scanner(System.in);
+//     Scanner scanner = new Scanner(System.in);
+//
+//     System.out.print("Ingrese el número de payasos vendidos: ");
+//     int payasos = scanner.nextInt();
+//     System.out.print("Ingrese el número de muñecas vendidas: ");
+//     int munecas = scanner.nextInt();
+//
+//     int pesoTotal = (payasos * 112) + (munecas * 75);
+//     System.out.println("El peso total del paquete es: " + pesoTotal + " gramos.");
+//
+//     scanner.close();
 
-     System.out.print("Ingrese el número de payasos vendidos: ");
-     int payasos = scanner.nextInt();
-     System.out.print("Ingrese el número de muñecas vendidas: ");
-     int munecas = scanner.nextInt();
 
-     int pesoTotal = (payasos * 112) + (munecas * 75);
-     System.out.println("El peso total del paquete es: " + pesoTotal + " gramos.");
+     //Ejercicio 6
 
-     scanner.close();
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingrese una frase: ");
+        String frase = scanner.nextLine();
+
+        String fraseInvertida = new StringBuilder(frase).reverse().toString();
+        System.out.println("Frase invertida: " + fraseInvertida);
+
+        scanner.close();
+
     }
 }
