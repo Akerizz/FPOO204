@@ -13,7 +13,8 @@ public class Ejercicio_1 {
 
                 System.out.println("Letras separadas:");
                 for (int i = 0; i < palabra.length(); i++) {
-                    System.out.println(palabra.charAt(i));
+                    System.out.println("Letra"+palabra.length()+":"+palabra.charAt(i));
+
                 }
 
                 scanner.close();
